@@ -20,8 +20,8 @@ let timeLeft = 100;
 function updateTimer() {
   // adds the timer display to the html
     timerDisplay.textContent = `Time left: ${timeLeft} seconds`;
-
-    if (timeLeft === 0) {
+    // if time left is = or less than 0
+    if (timeLeft <= 0) {
         clearInterval(timerInterval);
         // ends game if timer runs out
         displayResult(); 
@@ -137,6 +137,8 @@ displayNotification('Correct')
 }
 
 else {
+  // Subtract 10 seconds for wrong answers
+  timeLeft -=25;
   // logs to console
 console.log('Incorrect Answer');
 // invokes the displaynotification function displayed below
