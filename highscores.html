@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Scores</title> 
+    <link rel="stylesheet" href="./Develop/highscores.css">
+   
+    
+</head>
+<body>
+    <header class='High Scores'> 
+        <div><a href="index.html">Back to Quiz</a></div>
+    </header>
+    
+    <div id="highScoresContainer">
+        <h1>High Scores</h1>
+        <ul id="highScoresList"></ul>
+    </div>
+    <!-- This would not load for me in my script.js, grader if you could write a comment explaining why i would appreciate it -->
+    <script>
+        // displays high scores
+        function displayHighScores() {
+            const scores = JSON.parse(localStorage.getItem('scores')) || [];
+            // Sort the high scores in descending order based on the score value
+            scores.sort((a,b) => b.score - a.score)
+            // Select the highScoresList element from the DOM
+            const highScoresList = document.querySelector('#highScoresList');
+            // clears the existing content of highscores
+            highScoresList.textContent = '';
+            // loops through each score and creates a list item and appends the new list item to the highScoresList
+            scores.forEach((score, index) => {
+                const li = document.createElement('li');
+                li.textContent = `${index + 1}. ${score.initials}: ${score.score}`;
+                highScoresList.appendChild(li);
+            });
+        }
+
+        // Call the displayHighScores function to display high scores when the page loads
+        window.addEventListener('load', displayHighScores);
+    </script>
+    
+</body>
+</html>

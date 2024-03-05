@@ -1,0 +1,134 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+main {
+    max-width: 1000px;
+    padding: 20px;
+}
+
+header {
+    background-color: #c53e00;
+    color: rgb(215, 118, 118);
+    padding: 10px 0;
+    text-align: center;
+   
+}
+
+header a {
+    color: rgb(247, 247, 9);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#timer {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#gameTitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#startupScreen, #rules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#startupScreen h1, #rules h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#startupScreen button, #rules button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #bd6500;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#startupScreen button:hover, #rules button:hover {
+    background-color: #555;
+}
+
+#questionContainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#questionText {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#multipleChoice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#multipleChoice button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: #bd4900;
+    color: rgb(255, 221, 48);
+    border: none;
+}
+
+#multipleChoice button:hover {
+    background-color: #ff7300;
+}
+
+#resultScreen {
+    text-align: center;
+}
+
+#scoreContainer, #messageContainer, #inputContainer {
+    margin-bottom: 20px;
+}
+
+#initialsInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+#submitBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffc400;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+#submitBtn:hover {
+    background-color: #ff5e00;
+}
+
+.notification {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    color: rgb(145, 123, 0);
+}
+
+

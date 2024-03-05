@@ -1,0 +1,51 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffd9a7;
+}
+
+header {
+    background-color: #fff480; 
+    color: rgb(255, 255, 0);
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+  
+}
+
+header a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#highScoresContainer {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffb700; 
+    border-radius: 10px;
+    align-items: center;
+}
+
+#highScoresContainer h1 {
+    margin-bottom: 20px;
+}
+
+#highScoresList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#highScoresList li {
+    /* adds spacing between scores */
+    margin-bottom: 10px;
+    padding: 10px; /* Add padding inside each list item */
+    background-color: #f9f9f9; /* Light background color for list items */
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
