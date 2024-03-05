@@ -79,7 +79,7 @@ choices:['Boolean','Null','String','Var'],
 answer:3
 },
 {question:'What Does the document.getElementById() Function Do',
-choices:['Creates A new Element','Allows you to select and element by using its id attribute ','Adds an Event Listner','All of The Above'],
+choices:['Creates A new Element','Allows you to select and element by using its ID attribute ','Adds an Event Listener','All of The Above'],
 answer:1
 },
 {question:'Which of the following is not a css pseudo class',
@@ -87,7 +87,7 @@ choices:[':hover',':focus',':active',':enlarge'],
 answer:3
 },
 {question:'What is the Purpose if event.preventDefault()',
-choices:['It Invokes the default action of the event','It Deletes Event listners','It prevents the default action of the event','None of the Above'],
+choices:['It Invokes the default action of the event','It Deletes Event listeners','It prevents the default action of the event','None of the Above'],
 answer:2
 },
 ]
@@ -191,6 +191,17 @@ function displayResult(){
   playerScore.textContent=score;
   // appends results to main document * it didnt work for me without this please explain why
   document.querySelector('main').appendChild(resultScreen)
+// if user score is strictly equal to 10 create element 
+  if (score === 10) {
+    const quizBoiDefeat = document.createElement('h1');
+    quizBoiDefeat.textContent='Congradulations On Defeating Quiz Boi !!! Write your Initials Above'
+    quizBoiDefeat.style.fontWeight='bold';
+    quizBoiDefeat.style.color='orange'
+    quizBoiDefeat.style.fontSize='30px'
+    resultScreen.appendChild(quizBoiDefeat)
+
+  
+  }
 
 }
 
