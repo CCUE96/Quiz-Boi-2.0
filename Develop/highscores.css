@@ -1,3 +1,4 @@
+/* Highscores css */
 body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
@@ -42,10 +43,9 @@ header a {
 }
 
 #highScoresList li {
-    /* adds spacing between scores */
     margin-bottom: 10px;
-    padding: 10px; /* Add padding inside each list item */
-    background-color: #f9f9f9; /* Light background color for list items */
+    padding: 10px; 
+    background-color: #f9f9f9; 
     border-radius: 20px;
     font-family: 'Times New Roman', Times, serif;
 }

@@ -16,7 +16,7 @@ const submitButton=document.querySelector('#submitBtn')
 let score=0;
 // timer starting point
 let timeLeft = 100;
-
+// function to decrement timer is time left is not strictly === to 0
 function updateTimer() {
   // adds the timer display to the html
     timerDisplay.textContent = `Time left: ${timeLeft} seconds`;
