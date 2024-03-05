@@ -18,3 +18,4 @@ a time penalty for each answer you get wrong. Can you 🫵 Defeat Quiz boy
 https://github.com/CCUE96/Quiz-Boi-2.0
   
 ## <ins>Deployed Site<ins>
+https://ccue96.github.io/Quiz-Boi-2.0/
