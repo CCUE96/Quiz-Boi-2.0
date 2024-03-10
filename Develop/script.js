@@ -137,7 +137,7 @@ displayNotification('Correct')
 }
 
 else {
-  // Subtract 10 seconds for wrong answers
+  // Subtract 25 seconds for wrong answers
   timeLeft -=25;
   // logs to console
 console.log('Incorrect Answer');
